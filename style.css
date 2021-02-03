@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-blue: #5F9BCE;
+}
+
+
+.nav {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #d5ebff;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 150px;
+    background-image: url('images/wood-pattern.png');
+    padding: 50px;
+}
+
+.title-img {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.updates {
+    text-align: center;
+    margin: 100px auto;
+    width: 50%;
+}
+
+.gallery {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.slider {
+    overflow: hidden;
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+.slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {left: 0;}
+    20% {left: 0;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left:  -300%;}
+    100% {left: -400%;}
+}
+
+.menu {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    height: 200px;
+    background-color: #d5ebff;
+    position: sticky;
+    text-align: center;
+}
